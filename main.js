@@ -5,13 +5,11 @@
 
 // chiedi all'utente il cognome
 
-var cognome = 'conti'
+var cognome = prompt('inserisci il cognome')
 
 // crea una lista di cognomi
 
-var lista_cognomi = ['verdi', 'garibaldi', 'mazzini'];
-
-console.log(lista_cognomi);
+var lista_cognomi = ['Verdi', 'Garibaldi', 'Mazzini', 'Nicolaci', 'Rossi', 'Russo',	'Ferrari', 'Esposito', 'Bianchi', 'Romano', 'Colombo', 'Ricci', 'Marino', 'Greco', 'Bruno', 'Parisi'];
 
 // inserisci il cognome nella lista
 
@@ -21,4 +19,10 @@ lista_cognomi.push(cognome);
 
 lista_cognomi.sort()
 
+console.log(lista_cognomi);
+
 // scrivere a che posizione della lista si trova il cognome
+
+var posizione = lista_cognomi.indexOf(cognome);
+console.log(posizione + 1);
+document.getElementById('posizione_n').innerHTML = posizione + 1;
